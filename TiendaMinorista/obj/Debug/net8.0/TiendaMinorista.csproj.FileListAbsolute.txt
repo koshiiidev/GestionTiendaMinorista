@@ -1,0 +1,4 @@
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.GeneratedMSBuildEditorConfig.editorconfig
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.AssemblyInfoInputs.cache
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.AssemblyInfo.cs
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.csproj.CoreCompileInputs.cache
