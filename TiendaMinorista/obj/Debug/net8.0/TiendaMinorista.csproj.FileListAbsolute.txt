@@ -2,3 +2,14 @@ F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj
 F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.AssemblyInfoInputs.cache
 F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.AssemblyInfo.cs
 F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.csproj.CoreCompileInputs.cache
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.sourcelink.json
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\bin\Debug\net8.0\TiendaMinorista.exe
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\bin\Debug\net8.0\TiendaMinorista.deps.json
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\bin\Debug\net8.0\TiendaMinorista.runtimeconfig.json
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\bin\Debug\net8.0\TiendaMinorista.dll
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\bin\Debug\net8.0\TiendaMinorista.pdb
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.dll
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\refint\TiendaMinorista.dll
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.pdb
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\TiendaMinorista.genruntimeconfig.cache
+F:\Repos\Examen 1\Escenario Tienda Minorista\TiendaMinorista\TiendaMinorista\obj\Debug\net8.0\ref\TiendaMinorista.dll

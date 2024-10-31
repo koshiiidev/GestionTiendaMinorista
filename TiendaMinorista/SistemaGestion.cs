@@ -26,7 +26,8 @@ namespace TiendaMinorista
             try
             {
                 var cliente = BuscarCliente(clienteId);
-                var venta = new Venta(numeroVenta, clienteId);
+                
+                var venta = new Venta(numeroVenta, cliente);
 
                 foreach (var item in productosYCantidades)
                 {
@@ -43,7 +44,32 @@ namespace TiendaMinorista
                 throw;
             }
         }
+        public void AgregarProducto(Producto producto)
+        {
+            if (producto == null) 
+            {
+                throw new ArgumentNullException(nameof(producto));
+            }
+            if (inventario.Any(p => p.Codigo == producto.Codigo)) 
+            {
+                throw new Exception($"El producto con el codigo: {producto.Codigo} ya existe");
+            }
 
+            inventario.Add(producto);
+        }
+
+        public void AgregarCliente(Cliente cliente)
+        {
+            if (cliente == null)
+            {
+                throw new ArgumentNullException(nameof(cliente));
+            }
+            if(clientes.Any(c => c.Id == cliente.Id))
+            {
+                throw new Exception($"El cliente con el id: {cliente.Id} ya existe");
+            }
+            clientes.Add(cliente);
+        }
         public void ActualizarInventario(string codigoProducto, int nuevaCantidad)
         {
             try

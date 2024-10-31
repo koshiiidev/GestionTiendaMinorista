@@ -17,10 +17,8 @@ try
     var leche = new ProductoPerecible("P001", "Leche", 1000,100, DateTime.Now.AddDays(30));
     var arroz = new ProductoNoPerecible("P002", "Arroz", 1000, 200, "Alimentos");
 
-    var inventarioFiel = typeof(SistemaGestion).GetField("inventario", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
-    var inventario = (List<Producto>)inventarioFiel.GetValue(sistema);
-    inventario.Add(leche);
-    inventario.Add(arroz);
+    sistema.AgregarProducto(leche);
+    sistema.AgregarProducto(arroz);
 
     //Verificacion del inventario
     Console.WriteLine($"Producto: {leche.Nombre}, Stock: {leche.CantidadInventario}");
@@ -35,10 +33,8 @@ try
     var cliente = new Cliente("C001", "Isaac Lopez", "saaclv27@gmail.com");
     var cliente2 = new Cliente("C002", "Mon Rubi", "monchis@gmail.com");
 
-    var clientesField = typeof(SistemaGestion).GetField("clientes", System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Instance);
-    var clientes = (List<Cliente>)clientesField.GetValue(sistema);
-    clientes.Add(cliente);
-    clientes.Add(cliente2);
+    sistema.AgregarCliente(cliente);
+    sistema.AgregarCliente(cliente2);
 
     Console.WriteLine($"Cliente creado: {cliente.Nombre} (ID: {cliente.Id})");
     Console.WriteLine($"Cliente creado: {cliente2.Nombre} (ID: {cliente2.Id})");
@@ -58,8 +54,8 @@ try
     Console.WriteLine("Venta registrada con exito");
 
     //verificar si se actualizo el stock en el inventario
-    Console.WriteLine($"Stoc actualizado de {leche.Nombre}: {leche.CantidadInventario}");
-    Console.WriteLine($"Stoc actualizado de {arroz.Nombre}: {arroz.CantidadInventario}");
+    Console.WriteLine($"Stock actualizado de {leche.Nombre}: {leche.CantidadInventario}");
+    Console.WriteLine($"Stock actualizado de {arroz.Nombre}: {arroz.CantidadInventario}");
     Console.WriteLine("Registro de ventas completado con exito. \n");
 
     //Prueba del sistema de envios
@@ -69,12 +65,15 @@ try
     var envioTerrestre = new EnvioTerrestre("E001", "Isaac Lopez", "Calle Principal 321", "CAM011");
     var envioAereo = new EnvioAereo("E002", "Isaac Lopez", "San Jose", "VUELO001", 5.5);
 
+    sistema.AgregarEnvio(envioTerrestre);
+    sistema.AgregarEnvio(envioAereo);
+
     //registrar envios
     Console.WriteLine("\n Mostrando detalles de todos los envios:");
     sistema.MostrarTodosLosEnvios();
 
-    //5. Prueba de expeciones
-
+    //Prueba de expeciones
+    Console.WriteLine("5. Prueba de manejo de errores");
     try 
     {
         var ventaInvalida = new Dictionary<string, int>

@@ -12,7 +12,7 @@ namespace TiendaMinorista
         public double Peso{ get; private set; }
         public EnvioAereo(string numeroEnvio, string destinatario, string direccion, string numeroVuelo, double peso) : base(numeroEnvio, destinatario, direccion)
         {
-            NumeroEnvio = numeroEnvio;
+            NumeroVuelo = numeroVuelo;
             Peso = peso;
         }
 
